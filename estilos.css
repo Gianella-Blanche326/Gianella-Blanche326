@@ -1,0 +1,57 @@
+body { 
+    font-family: sans-serif; 
+    text-align: center; 
+    background-color: #f4f4f4; 
+    padding: 20px; 
+}
+
+.container { 
+    max-width: 400px; 
+    margin: auto; 
+    background: white; 
+    padding: 30px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Corregido: box-shadow */
+}
+
+h1 { 
+    color: #333; 
+    font-size: 24px; 
+}
+
+p { 
+    color: #666; 
+    margin-bottom: 25px; 
+}
+
+/* --- Estilos para Listas (Agregados) --- */
+ul, ol {
+    text-align: left;      /* Hace que el texto de la lista se alinee a la izquierda para que sea más fácil de leer */
+    margin-bottom: 25px;   /* Mismo espacio inferior que tienen tus párrafos */
+    padding-left: 20px;    /* Espacio para que los puntitos o números no queden fuera del contenedor */
+}
+
+li {
+    color: #666;           /* Mismo color gris que tus párrafos para mantener la armonía */
+    margin-bottom: 10px;   /* Separación interna entre cada elemento de la lista */
+}
+/* -------------------------------------- */
+
+.link-button { 
+    display: block; 
+    background-color: #007bff; 
+    color: white; 
+    text-decoration: none; 
+    padding: 15px; 
+    margin: 10px 0; 
+    border-radius: 8px; 
+    font-weight: bold;
+}
+
+.link-button:hover { 
+    background-color: #0056b3; 
+}
+
+.project-link { 
+    background-color: #28a745; 
+}
