@@ -6,12 +6,12 @@ body {
 }
 
 .container { 
-    max-width: 400px; 
+    max-width: 900px; /* Ajustado para que la tabla y los componentes tengan buen espacio */
     margin: auto; 
     background: white; 
     padding: 30px; 
     border-radius: 15px; 
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Corregido: box-shadow */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
 }
 
 h1 { 
@@ -24,19 +24,19 @@ p {
     margin-bottom: 25px; 
 }
 
-/* --- Estilos para Listas (Agregados) --- */
+/* --- Estilos para Listas --- */
 ul, ol {
-    text-align: left;      /* Hace que el texto de la lista se alinee a la izquierda para que sea más fácil de leer */
-    margin-bottom: 25px;   /* Mismo espacio inferior que tienen tus párrafos */
-    padding-left: 20px;    /* Espacio para que los puntitos o números no queden fuera del contenedor */
+    text-align: left;
+    margin-bottom: 25px;
+    padding-left: 20px;
 }
 
 li {
-    color: #666;           /* Mismo color gris que tus párrafos para mantener la armonía */
-    margin-bottom: 10px;   /* Separación interna entre cada elemento de la lista */
+    color: #666;
+    margin-bottom: 10px;
 }
-/* -------------------------------------- */
 
+/* --- Estilos para Botones --- */
 .link-button { 
     display: block; 
     background-color: #007bff; 
@@ -55,13 +55,101 @@ li {
 .project-link { 
     background-color: #28a745; 
 }
+
 /* Estilos exclusivos para el botón de WhatsApp */
 .whatsapp-button {
-    background-color: #25D366 !important; /* Verde de WhatsApp */
-    color: #FFFFFF !important;            /* Texto blanco */
+    background-color: #25D366 !important; 
+    color: #FFFFFF !important;
 }
 
 .whatsapp-button:hover {
-    background-color: #20BA5A !important; /* Verde más oscuro al pasar el mouse */
+    background-color: #20BA5A !important; 
     color: #FFFFFF !important;
+}
+
+/* --- Estilos para Tablas --- */
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto; /* Mantiene la tabla accesible en pantallas pequeñas o lectores */
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    color: #444;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Lectura alternada */
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* --- Badges / Etiquetas de Estado --- */
+
+.status-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Verde: Resuelto / Aprobado */
+.status-resuelto {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* Amarillo: En trámite / Proyecto */
+.status-tramite {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+/* Azul: En seguimiento / Informativo */
+.status-seguimiento {
+    background-color: #cce5ff;
+    color: #004085;
+}
+
+/* Rojo: No respondido / Inconcluso / Sin seguimiento */
+.status-no-respondido, 
+.status-sin-seguimiento {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* --- Enlaces dentro de la tabla --- */
+
+.table-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.table-link:hover {
+    text-decoration: underline;
 }
