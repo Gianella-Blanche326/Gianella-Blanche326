@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe Técnico: Fallas de Funcionalidad y Accesibilidad - Lentes Anny (V2)</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proyectos.html">Volver a la tabla de proyectos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <header class="informe-header">
+                <h1>Informe Técnico: Fallas de Funcionalidad y Accesibilidad - Lentes Anny (V2)</h1>
+                <p class="fecha-lugar"><strong>Fecha del Informe:</strong> Mayo de 2026</p>
+                <p class="dispositivo"><strong>Dispositivo:</strong> Lentes Anny - Última versión de la aplicación</p>
+                <p class="referencia"><strong>Referencia:</strong> Seguimiento técnico y vinculación con el informe del 12 de enero del corriente año</p>
+            </header>
+
+            <section>
+                <h2>1. Inaccesibilidad en el Registro de Usuario</h2>
+                <p>Se reportan barreras críticas que no cumplen con las normas internacionales WCAG, tal como se mencionó en el informe del 12 de enero:</p>
+                <ul>
+                    <li><strong>Fallas del Lector de Pantalla:</strong> El sistema TalkBack no reconoce las casillas de "correo electrónico" y "contraseña". En los casos donde las reconoce, la interacción debe hacerse con extremo cuidado por la inestabilidad de la interfaz, ya que la misma, según el lector de pantalla, presenta imágenes de color blanco, negro o gris.</li>
+                    <li><strong>Estado del Botón de Inicio:</strong> Actualmente, el lector de pantalla saltea el botón de "iniciar sesión", impidiendo el acceso al sistema.</li>
+                    <li><strong>Observación sobre Distribución:</strong> Según el IN Salas, se espera que la aplicación esté disponible en Play Store para evitar estos registros inaccesibles, los cuales no cumplen con la normativa WCAG, pero no hay un tiempo determinado para ello.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>2. Análisis de Fallas de Sensores y Movilidad</h2>
+                <p>Las fallas detalladas a continuación se condicen con el punto 4 inciso A del informe presentado el 12 de enero del corriente año:</p>
+                <ul>
+                    <li><strong>Detección de Obstáculos:</strong> A pesar de la reorientación de sensores y las capacitaciones realizadas, los lentes no detectan obstáculos en exteriores (columnas, postes, carteles, entradas de edificios) al caminar a una velocidad normal con el bastón.</li>
+                    <li><strong>Limitación de Velocidad:</strong> Para que la información de los sensores llegue al usuario a través de las vibraciones, este debe caminar demasiado lento, lo cual no resulta funcional para el desplazamiento cotidiano.</li>
+                    <li><strong>Rango Técnico:</strong> Según el IN Salas, los lentes deben detectar obstáculos a una distancia de 2,20 / 2,80 metros (equivalente a cinco baldosas en interiores), meta que no se cumple en la práctica exterior.</li>
+                </ul>
+                <p>Físicamente, la latencia del sistema ($t_{\text{latencia}}$) es superior al umbral de seguridad necesario para una velocidad de marcha estándar ($v_{\text{marcha}}$), lo que invalida la efectividad de la distancia de detección ($d_{\text{detección}}$) de los sensores en entornos dinámicos.</p>
+            </section>
+
+            <section>
+                <h2>3. Tabla de Datos Técnicos</h2>
+                <p>Cabe señalar que, antes de confeccionar dicha tabla de datos, la información fue consultada con un Ingeniero en Sistemas de Información de la Universidad Tecnológica Nacional (UTN). La conclusión compartida es que dichos sensores no llegan a cubrir la distancia requerida de 2,20 metros, convirtiendo al dispositivo en una tecnología no viable para la seguridad del usuario.</p>
+
+                <table>
+                    <caption>Resultados de Ensayos Técnicos de Detección y Latencia</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Ensayo</th>
+                            <th scope="col">Obstáculo</th>
+                            <th scope="col">Distancia de Aviso</th>
+                            <th scope="col">Latencia Calculada</th>
+                            <th scope="col">Resultado Técnico</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Interior A</td>
+                            <td>Pared Plana</td>
+                            <td>1,00 metro</td>
+                            <td>1,16 seg.</td>
+                            <td><strong>Falla Crítica:</strong> Tiempo de reacción insuficiente.</td>
+                        </tr>
+                        <tr>
+                            <td>Interior B</td>
+                            <td>Marco de Puerta</td>
+                            <td>0,90 metros</td>
+                            <td>1,25 seg.</td>
+                            <td><strong>Punto Ciego:</strong> El sensor ignora los bordes laterales.</td>
+                        </tr>
+                        <tr>
+                            <td>Dinámico</td>
+                            <td>Pared (Marcha rápida)</td>
+                            <td>0,85 metros</td>
+                            <td>1,29 seg.</td>
+                            <td><strong>Riesgo de Colisión:</strong> El usuario choca antes de procesar el aviso.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h2>4. Fallas en la Asistencia Remota</h2>
+                <p>En relación a la ayuda remota, las fallas se condicen con el punto 4 inciso A e inciso B del informe del 12 de enero:</p>
+                <ul>
+                    <li><strong>Interrupción de Comunicación:</strong> Durante el uso, la imagen se congela y el audio deja de escucharse.</li>
+                    <li><strong>Inestabilidad del Sistema:</strong> El dispositivo suele colgarse cuando el usuario final intenta pedir ayuda, provocando que la notificación nunca llegue al tutor asignado.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>5. Bitácora de Pruebas Recientes</h2>
+                <ul>
+                    <li><strong>15/04/2026 (18:00 hs):</strong> Falla en la funcionalidad de texto mediante comando; el dispositivo no logró captar el texto. En la función de imagen, el lector de pantalla no logró captar a la persona enfocada, aunque en la pantalla del celular se confirmaba que los lentes apuntaban correctamente.</li>
+                    <li><strong>19/04/2026 (19:40 hs):</strong> Se probó la ayuda mediante comando de voz al menos cinco veces sin éxito (no se ve ni se escucha) bajo red Wi-Fi.</li>
+                    <li><strong>08/05/2026:</strong> Funcionalidad de escaneo de imagen. Se realizó desde el celular porque al instalar una nueva APK no se pudieron volver a conectar los lentes (Funciona).</li>
+                    <li><strong>08/05/2026:</strong> Funcionalidad de escaneo de billetes. Se realizó desde el celular porque no se pudieron conectar los anteojos (Funciona).</li>
+                    <li><strong>11/05/2026:</strong> Conexión de lentes a red hotspot / Wi-Fi. No se pudo realizar tras varios intentos fallidos.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>6. Conclusión sobre Alcances y Limitaciones</h2>
+                <p>Como usuaria y desarrolladora, considero fundamentales las nuevas funciones (escanear billetes, códigos y texto), pero el producto se está alejando de su alcance original: la detección de obstáculos de los hombros hacia arriba y la asistencia remota. ¿Por qué lo que debería funcionar (sensores y ayuda remota) no funciona? El enfoque actual está transformando una herramienta de autonomía en una serie de limitaciones técnicas.</p>
+            </section>
+
+            <footer class="firma">
+                <p><strong>Blanche Gianella Guadalupe</strong><br>
+                QA & Especialista en Accesibilidad</p>
+            </footer>
+        </article>
+    </main>
+
+    <footer>
+        <p>Blanche Gianella Guadalupe &copy; Todos los derechos reservados 2026</p>
+    </footer>
+
+</body>
+</html>
