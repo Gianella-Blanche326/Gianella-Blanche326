@@ -9,7 +9,7 @@
 <body>
 
     <header>
-        <nav>
+        <nav aria-label="Navegación principal">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="proyectos.html">Volver a la tabla de proyectos</a></li>
@@ -17,10 +17,10 @@
         </nav>
     </header>
 
-    <main>
+    <main class="contenedor">
         <article>
             <header class="informe-header">
-                <p class="fecha-lugar">Santa Fe de la Vera Cruz, 23 de junio de 2026</p>
+                <p class="fecha-lugar">Santa Fe de la Vera Cruz, <time datetime="2026-06-23">23 de junio de 2026</time></p>
                 <div class="destinatario">
                     <p><strong>Al Señor Secretario de Gobierno, Control y Seguridad Ciudadana</strong><br>
                     De la Municipalidad de la Ciudad de Santa Fe de la Vera Cruz<br>
@@ -36,27 +36,30 @@
                 <p class="referencia"><strong>REF:</strong> Solicitud de reubicación e instalación de garita accesible en Av. 12 de Octubre (Plazoleta “Amigos del Ciego”).</p>
             </header>
 
-            <section class="introduccion">
+            <section class="introduccion" aria-labelledby="sec-intro">
+                <p id="sec-intro" class="sr-only">Encabezamiento de la nota</p>
                 <p>De mi mayor consideración:</p>
                 <p>Me dirijo a los actores correspondientes en mi carácter de <strong>Representante Electa de la Comunidad de Personas con Discapacidad ante la Comisión Asesora Municipal de Discapacidad</strong>, con el propósito de solicitar formalmente la intervención de las áreas competentes para la instalación y adecuación de una parada / garita de colectivos sobre la Av. 12 de Octubre, a la altura de la plazoleta “Amigos del Ciego”.</p>
             </section>
 
-            <section>
-                <h2>Fundamentación de la Solicitud</h2>
+            <section aria-labelledby="sec-fundamentacion">
+                <h2 id="sec-fundamentacion">Fundamentación de la Solicitud</h2>
                 <p>La presente solicitud se fundamenta en las graves dificultades de accesibilidad y los riesgos latentes a la seguridad vial que presenta la ubicación actual de la parada. La constante presencia de actividad comercial y de vehículos estacionados de manera indebida en el sector obstruye el espacio peatonal y de maniobra de las unidades de transporte.</p>
                 <p>Esta situación complejiza de manera crítica el ascenso y descenso de los pasajeros, vulnerando el derecho a la libre y segura movilidad, especialmente de las personas con discapacidad visual y motriz que asisten y transitan por la zona de la mencionada plazoleta.</p>
             </section>
 
-            <section>
-                <h2>Petitorio</h2>
+            <section aria-labelledby="sec-petitorio">
+                <h2 id="sec-petitorio">Petitorio</h2>
                 <p>Por lo expuesto, se solicita evaluar la viabilidad técnica para la disposición de un refugio peatonal (garita) adaptado, que garantice las condiciones de accesibilidad universal, así como el ordenamiento del estacionamiento en el sector afectado.</p>
             </section>
 
             <footer class="firma">
                 <p>Agradeciendo desde ya su atención y pronta respuesta a la presente, quedando a su entera disposición para coordinar los aspectos técnicos que resulten necesarios, las y los saludo atentamente.</p>
-                <p><strong>Blanche Gianella Guadalupe</strong><br>
-                Representante Electa - Comisión Asesora Municipal de Discapacidad<br>
-                Municipalidad de Santa Fe</p>
+                <address>
+                    <strong>Blanche Gianella Guadalupe</strong><br>
+                    Representante Electa - Comisión Asesora Municipal de Discapacidad<br>
+                    Municipalidad de Santa Fe
+                </address>
             </footer>
         </article>
     </main>

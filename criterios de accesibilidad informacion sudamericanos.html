@@ -8,107 +8,111 @@
 </head>
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="proyectos.html">Volver a la tabla de proyectos</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <article>
-            <header class="informe-header">
-                <h1>Informe de Accesibilidad Turística: Criterios de Comunicación para Personas con Discapacidad Visual</h1>
-                <p class="autor"><strong>Elaborado por las representantes de la Comisión Asesora Municipal de Santa Fe:</strong><br>
-                Brizuela Marcela – Milesi Laura – Blanche Gianella</p>
-                <p class="fecha-lugar"><strong>Fecha de elaboración:</strong> 25 de julio de 2026</p>
-            </header>
-
-            <section class="introduccion">
-                <p>El presente documento detalla las conclusiones y especificaciones técnicas derivadas de la consulta realizada al colectivo de personas con discapacidad visual. El objetivo central consiste en definir pautas claras para la difusión y entrega de información sobre la oferta turística, garantizando la autonomía, la usabilidad digital y la accesibilidad física.</p>
-            </section>
-
-            <section>
-                <h2>1. Antecedentes y Canales Evaluados</h2>
-                <p>En la fase diagnóstica, se evaluaron diversos canales y formatos para la entrega de información a los usuarios, considerando factores tecnológicos, de edad y de acceso a la conectividad:</p>
+    <div class="container">
+        <header>
+            <nav aria-label="Navegación principal">
                 <ul>
-                    <li><strong>Audios por WhatsApp:</strong> Alternativa pensada para adultos mayores o personas que presentan brechas tecnológicas o dificultades en el escaneo de códigos QR.</li>
-                    <li><strong>Archivos Digitales (PDF / Word):</strong> Documentación descargable para ser procesada mediante tecnologías asistivas (lectores de pantalla).</li>
-                    <li><strong>Páginas Web Oficiales:</strong> Plataformas institucionales con contenidos equivalentes e integrados.</li>
-                    <li><strong>Códigos QR:</strong> Puntos de enlace situados en soportes físicos o digitales para redirigir al usuario hacia la información extendida.</li>
+                    <li><a href="index.html" class="link-button">Inicio</a></li>
+                    <li><a href="proyectos.html" class="link-button project-link">Volver a la tabla de proyectos</a></li>
                 </ul>
-            </section>
+            </nav>
+        </header>
 
-            <section>
-                <h2>2. Devolución y Preferencias del Colectivo de Discapacidad Visual</h2>
-                <p>A partir de la consulta formal efectuada a las personas del colectivo con discapacidad visual, se establecieron requisitos precisos e indeclinables para garantizar el acceso efectivo a la información turística:</p>
-                
-                <h3>2.1. Formatos Digitales y Compatibilidad Asistiva</h3>
-                <p>Los usuarios expresaron una clara preferencia por recibir la información en archivos Word o PDF, con la condición indispensable de que estén estructurados en texto plano (sin imágenes de texto no etiquetadas ni diseños complejos que obstaculicen la lectura asistida). Asimismo, se validó el uso de las páginas web oficiales siempre que mantengan la misma equivalencia en contenido y estructura accesible.</p>
+        <main>
+            <article>
+                <header class="informe-header">
+                    <h1>Informe de Accesibilidad Turística: Criterios de Comunicación para Personas con Discapacidad Visual</h1>
+                    <p class="autor"><strong>Elaborado por las representantes de la Comisión Asesora Municipal de Santa Fe:</strong><br>
+                    Brizuela Marcela – Milesi Laura – Blanche Gianella</p>
+                    <p class="fecha-lugar"><strong>Fecha de elaboración:</strong> 25 de julio de 2026</p>
+                </header>
 
-                <h3>2.2. Requisitos de Accesibilidad para Códigos QR</h3>
-                <p>Respecto a la implementación de códigos QR en folletería, señaléctica o soportes físicos presenciales, se definieron dos directrices clave:</p>
-                <ul>
-                    <li><strong>Remisión Directa:</strong> Al ser escaneado, el código QR debe dirigir de manera inmediata al archivo accesible en Word/PDF o a la sección específica del sitio web oficial.</li>
-                    <li><strong>Delimitación en Relieve Táctil:</strong> Para facilitar la fase de localización y acción, la superficie perimetral que rodea al código QR debe contar con una demarcación o marco con relieve al tacto. Esto resulta imprescindible para que la persona con discapacidad visual pueda detectar mediante el tacto la ubicación exacta del código y alinear correctamente la cámara de su dispositivo móvil para el escaneo.</li>
-                </ul>
-            </section>
+                <section class="introduccion">
+                    <p>El presente documento detalla las conclusiones y especificaciones técnicas derivadas de la consulta realizada al colectivo de personas con discapacidad visual. El objetivo central consiste en definir pautas claras para la difusión y entrega de información sobre la oferta turística, garantizando la autonomía, la usabilidad digital y la accesibilidad física.</p>
+                </section>
 
-            <section>
-                <h2>3. Matriz de Criterios y Especificaciones Técnicas</h2>
-                <table>
-                    <caption>Criterios técnicos para soportes de comunicación turística accesible</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col">Soporte / Canal</th>
-                            <th scope="col">Especificación Técnica</th>
-                            <th scope="col">Función de Accesibilidad</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Documentos PDF / Word</td>
-                            <td>Estructura en texto plano, etiquetado jerárquico de encabezados y sin texto incrustado en imágenes.</td>
-                            <td>Lectura fluida mediante lectores de pantalla (NVDA, JAWS, VoiceOver).</td>
-                        </tr>
-                        <tr>
-                            <td>Páginas Web Oficiales</td>
-                            <td>Diseño web accesible (cumplimiento de pautas WCAG), equivalencia de contenidos y navegación clara.</td>
-                            <td>Garantizar la disponibilidad institucional centralizada de la información turística.</td>
-                        </tr>
-                        <tr>
-                            <td>Código QR en Soporte Físico</td>
-                            <td>Marco/borde con relieve táctil perceptible que delimite los cuatro costados del QR. Remisión a URL directa.</td>
-                            <td>Permite la localización háptica (por tacto) y orienta la captura fotográfica del código autónomamente.</td>
-                        </tr>
-                        <tr>
-                            <td>Audios Informativos</td>
-                            <td>Mensajes explicativos claros, breves y con locución pausada enviados por WhatsApp o descargables.</td>
-                            <td>Atención a adultos mayores o personas con brecha en habilidades digitales.</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+                <section>
+                    <h2>1. Antecedentes y Canales Evaluados</h2>
+                    <p>En la fase diagnóstica, se evaluaron diversos canales y formatos para la entrega de información a los usuarios, considerando factores tecnológicos, de edad y de acceso a la conectividad:</p>
+                    <ul>
+                        <li><strong>Audios por WhatsApp:</strong> Alternativa pensada para adultos mayores o personas que presentan brechas tecnológicas o dificultades en el escaneo de códigos QR.</li>
+                        <li><strong>Archivos Digitales (PDF / Word):</strong> Documentación descargable para ser procesada mediante tecnologías asistivas (lectores de pantalla).</li>
+                        <li><strong>Páginas Web Oficiales:</strong> Plataformas institucionales con contenidos equivalentes e integrados.</li>
+                        <li><strong>Códigos QR:</strong> Puntos de enlace situados en soportes físicos o digitales para redirigir al usuario hacia la información extendida.</li>
+                    </ul>
+                </section>
 
-            <section>
-                <h2>4. Conclusión</h2>
-                <p>La integración coordinada de formatos digitales en texto plano junto con soluciones táctiles en soportes físicos (delimitación en relieve para códigos QR) constituye la estrategia idónea para garantizar la plena autonomía e inclusión de las personas con discapacidad visual en el acceso a la oferta turística.</p>
-            </section>
+                <section>
+                    <h2>2. Devolución y Preferencias del Colectivo de Discapacidad Visual</h2>
+                    <p>A partir de la consulta formal efectuada a las personas del colectivo con discapacidad visual, se establecieron requisitos precisos e indeclinables para garantizar el acceso efectivo a la información turística:</p>
+                    
+                    <h3>2.1. Formatos Digitales y Compatibilidad Asistiva</h3>
+                    <p>Los usuarios expresaron una clara preferencia por recibir la información en archivos Word o PDF, con la condición indispensable de que estén estructurados en texto plano (sin imágenes de texto no etiquetadas ni diseños complejos que obstaculicen la lectura asistida). Asimismo, se validó el uso de las páginas web oficiales siempre que mantengan la misma equivalencia en contenido y estructura accesible.</p>
 
-            <footer class="firma">
-                <p><strong>Comisión Asesora Municipal de Discapacidad</strong><br>
-                Brizuela Marcela – Milesi Laura – Blanche Gianella<br>
-                Representantes de la Comunidad<br>
-                Municipalidad de Santa Fe</p>
-            </footer>
-        </article>
-    </main>
+                    <h3>2.2. Requisitos de Accesibilidad para Códigos QR</h3>
+                    <p>Respecto a la implementación de códigos QR en folletería, señaléctica o soportes físicos presenciales, se definieron dos directrices clave:</p>
+                    <ul>
+                        <li><strong>Remisión Directa:</strong> Al ser escaneado, el código QR debe dirigir de manera inmediata al archivo accesible en Word/PDF o a la sección específica del sitio web oficial.</li>
+                        <li><strong>Delimitación en Relieve Táctil:</strong> Para facilitar la fase de localización y acción, la superficie perimetral que rodea al código QR debe contar con una demarcación o marco con relieve al tacto. Esto resulta imprescindible para que la persona con discapacidad visual pueda detectar mediante el tacto la ubicación exacta del código y alinear correctamente la cámara de su dispositivo móvil para el escaneo.</li>
+                    </ul>
+                </section>
 
-    <footer>
-        <p>Blanche Gianella Guadalupe &copy; Todos los derechos reservados 2026</p>
-    </footer>
+                <section>
+                    <h2>3. Matriz de Criterios y Especificaciones Técnicas</h2>
+                    <div class="table-responsive">
+                        <table>
+                            <caption>Criterios técnicos para soportes de comunicación turística accesible</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Soporte / Canal</th>
+                                    <th scope="col">Especificación Técnica</th>
+                                    <th scope="col">Función de Accesibilidad</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Documentos PDF / Word</td>
+                                    <td>Estructura en texto plano, etiquetado jerárquico de encabezados y sin texto incrustado en imágenes.</td>
+                                    <td>Lectura fluida mediante lectores de pantalla (NVDA, JAWS, VoiceOver).</td>
+                                </tr>
+                                <tr>
+                                    <td>Páginas Web Oficiales</td>
+                                    <td>Diseño web accesible (cumplimiento de pautas WCAG), equivalencia de contenidos y navegación clara.</td>
+                                    <td>Garantizar la disponibilidad institucional centralizada de la información turística.</td>
+                                </tr>
+                                <tr>
+                                    <td>Código QR en Soporte Físico</td>
+                                    <td>Marco/borde con relieve táctil perceptible que delimite los cuatro costados del QR. Remisión a URL directa.</td>
+                                    <td>Permite la localización háptica (por tacto) y orienta la captura fotográfica del código autónomamente.</td>
+                                </tr>
+                                <tr>
+                                    <td>Audios Informativos</td>
+                                    <td>Mensajes explicativos claros, breves y con locución pausada enviados por WhatsApp o descargables.</td>
+                                    <td>Atención a adultos mayores o personas con brecha en habilidades digitales.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>4. Conclusión</h2>
+                    <p>La integración coordinada de formatos digitales en texto plano junto con soluciones táctiles en soportes físicos (delimitación en relieve para códigos QR) constituye la estrategia idónea para garantizar la plena autonomía e inclusión de las personas con discapacidad visual en el acceso a la oferta turística.</p>
+                </section>
+
+                <footer class="firma">
+                    <p><strong>Comisión Asesora Municipal de Discapacidad</strong><br>
+                    Brizuela Marcela – Milesi Laura – Blanche Gianella<br>
+                    Representantes de la Comunidad<br>
+                    Municipalidad de Santa Fe</p>
+                </footer>
+            </article>
+        </main>
+
+        <footer>
+            <p>Blanche Gianella Guadalupe  &copy; Todos los derechos reservados 2026</p>
+        </footer>
+    </div>
 
 </body>
 </html>

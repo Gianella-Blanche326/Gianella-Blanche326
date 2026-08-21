@@ -3,43 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blanche Gianella Guadalupe</title>
-    <link rel="stylesheet" href="style.css"> <!-- O el nombre de tu archivo CSS -->
+    <title>Blanche Gianella Guadalupe - Desarrolladora de Software</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
-    <header>
-        <h1>Blanche Gianella Guadalupe</h1>
-        <p>Desarrolladora de Software | Accesibilidad Web | Gestión Pública</p>
-        
-        <nav aria-label="Navegación principal">
-            <a href="proyectos.html">Proyectos</a>
-            <a href="https://gianellablanche.substack.com/">Escritos</a>
-            <a href="acercademi.html">Acerca de mí</a>
-            <a href="info productos digitales.html">productos ddigitales</a>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Blanche Gianella Guadalupe</h1>
+            <p>Desarrolladora de Software | Accesibilidad Web | Gestión Pública</p>
+            
+            <nav aria-label="Navegación principal">
+                <ul>
+                    <li><a href="proyectos.html" class="link-button">Proyectos</a></li>
+                    <li><a href="https://gianellablanche.substack.com/" class="link-button" target="_blank" rel="noopener noreferrer" aria-label="Escritos en Substack (abre en una nueva pestaña)">Escritos</a></li>
+                    <li><a href="acercademi.html" class="link-button">Acerca de mí</a></li>
+                    <li><a href="info-productos-digitales.html" class="link-button">Productos Digitales</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <hr aria-hidden="true">
+        <hr aria-hidden="true">
 
-    <main>
-        <section aria-labelledby="titulo-contacto">
-            <h2 id="titulo-contacto">Contacto</h2>
-            <a href="https://www.linkedin.com/in/gianella-blanche-70ba5b1aa" target="_blank" rel="noopener noreferrer" aria-label="Mi LinkedIn (abre en una nueva pestaña)">Mi LinkedIn</a>
-            <a href="https://instagram.com/blanchegiane" target="_blank" rel="noopener noreferrer" aria-label="Instagram (abre en una nueva pestaña)">Instagram</a>
-            <a href="mailto:guadablanche8@gmail.com">Enviar Email</a>
-            <a href="https://wa.me/543424065665?text=Hola%20Gianella,%20vi%20tu%20perfil%20profesional%20y%20me%20gustaría%20ponerme%20en%20contacto%20contigo." target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp (abre en una nueva pestaña)">
-                Contactar por WhatsApp
-            </a>
-        </section>
-    </main>
+        <main id="contenido-principal">
+            <section aria-labelledby="titulo-contacto">
+                <h2 id="titulo-contacto">Contacto</h2>
+                <div class="contacto-links">
+                    <a href="https://www.linkedin.com/in/gianella-blanche-70ba5b1aa" target="_blank" rel="noopener noreferrer" aria-label="Mi LinkedIn (abre en una nueva pestaña)" class="link-button">Mi LinkedIn</a>
+                    <a href="https://instagram.com/blanchegiane" target="_blank" rel="noopener noreferrer" aria-label="Instagram (abre en una nueva pestaña)" class="link-button">Instagram</a>
+                    <a href="mailto:guadablanche8@gmail.com" class="link-button">Enviar Email</a>
+                    <a href="https://wa.me/543424065665?text=Hola%20Gianella,%20vi%20tu%20perfil%20profesional%20y%20me%20gustaría%20ponerme%20en%20contacto%20contigo." target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp (abre en una nueva pestaña)" class="link-button">
+                        Contactar por WhatsApp
+                    </a>
+                </div>
+            </section>
+        </main>
 
-    <hr aria-hidden="true">
+        <hr aria-hidden="true">
 
-    <footer>
-        <p>© 2026 Blanche Gianella Guadalupe. Todos los derechos reservados.</p>
-        <p>Desarrollado con enfoque en accesibilidad universal.</p>
-    </footer>
+        <footer>
+            <p>&copy; 2026 Blanche Gianella Guadalupe. Todos los derechos reservados.</p>
+            <p>Desarrollado con enfoque en accesibilidad universal.</p>
+        </footer>
+    </div>
 
 </body>
 </html>

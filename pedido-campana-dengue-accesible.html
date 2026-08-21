@@ -8,40 +8,43 @@
 </head>
 <body>
 
-    <nav aria-label="Navegación principal">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="proyectos.html">Volver a la tabla de proyectos</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proyectos.html">Volver a la tabla de proyectos</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <main>
+    <main class="contenedor">
         <article>
-            <header>
+            <header class="informe-header">
                 <h1>Documento: Pedido de Campaña de Prevención contra el Dengue Accesible</h1>
-                <p><strong>Fecha:</strong> 19 de noviembre de 2025</p>
-                <p><strong>Elaborado por:</strong> Blanche Gianella Guadalupe – Representante Electa de la Comunidad de Personas con Discapacidad (Comisión Asesora Municipal de Santa Fe)</p>
+                <p class="fecha-lugar">Santa Fe, <time datetime="2025-11-19">19 de noviembre de 2025</time></p>
+                <p class="autor">
+                    <strong>Elaborado por:</strong><br>
+                    Blanche Gianella Guadalupe – Representante Electa de la Comunidad de Personas con Discapacidad (Comisión Asesora Municipal de Santa Fe)
+                </p>
             </header>
 
-            <hr>
-
-            <section>
-                <h2>1. Origen del Pedido</h2>
+            <section aria-labelledby="sec-origen">
+                <h2 id="sec-origen">1. Origen del Pedido</h2>
                 <p>Este requerimiento inicial surge a partir de una solicitud específica de una organización que buscaba una capacitación sobre la prevención del dengue dirigida exclusivamente a personas sordas.</p>
             </section>
 
-            <section>
-                <h2>2. Propuesta de la Comisión Asesora Municipal</h2>
+            <section aria-labelledby="sec-propuesta">
+                <h2 id="sec-propuesta">2. Propuesta de la Comisión Asesora Municipal</h2>
                 <p>Debido a las limitaciones de jurisdicción y competencia de la Comisión Asesora Municipal para llevar a cabo una capacitación individualizada, se propuso como alternativa la realización de una campaña de difusión masiva sobre la prevención del dengue en formato accesible.</p>
             </section>
 
-            <section>
-                <h2>3. Articulación y Colaboración</h2>
+            <section aria-labelledby="sec-articulacion">
+                <h2 id="sec-articulacion">3. Articulación y Colaboración</h2>
                 <p>La representante articuló la necesidad de esta campaña con la Secretaría de Comunicación de la Municipalidad de Santa Fe, con quien ya se mantenía un vínculo de trabajo colaborativo desde principios de año.</p>
             </section>
 
-            <section>
-                <h2>4. Medidas de Accesibilidad Solicitadas</h2>
+            <section aria-labelledby="sec-medidas">
+                <h2 id="sec-medidas">4. Medidas de Accesibilidad Solicitadas</h2>
                 <p>Como miembro de la Comisión Asesora Municipal, se propuso y se enfatizó la necesidad de que la campaña incluyera las siguientes medidas de accesibilidad, garantizando su comprensión por la mayor cantidad de ciudadanos posible:</p>
                 <ul>
                     <li><strong>Para contenidos visuales/imágenes:</strong> Texto alternativo.</li>
@@ -50,15 +53,15 @@
                 </ul>
             </section>
 
-            <section>
-                <h2>5. Próximos Pasos</h2>
+            <section aria-labelledby="sec-pasos">
+                <h2 id="sec-pasos">5. Próximos Pasos</h2>
                 <p>La Secretaría de Comunicación, que ya disponía de la documentación y tutoriales sobre accesibilidad proporcionados previamente por la Comisión, propuso remitir en un documento los spots publicitarios existentes para que los representantes pudieran evaluar y definir cómo aplicar las medidas de accesibilidad necesarias sobre dicho material.</p>
             </section>
         </article>
     </main>
 
     <footer>
-        <p>&copy; Blanche Gianella Guadalupe. Todos los derechos reservados.</p>
+        <p>Blanche Gianella Guadalupe &copy; Todos los derechos reservados 2026</p>
     </footer>
 
 </body>

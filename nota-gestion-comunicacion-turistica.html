@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedido de informe sobre condiciones de accesibilidad - Diplomatura en Gestión de la Comunicación Turística</title>
+    <title>Pedido de Informe sobre Accesibilidad - Diplomatura en Gestión de la Comunicación Turística</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
     <header>
-        <nav>
+        <nav aria-label="Navegación principal">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="proyectos.html">Volver a la tabla de proyectos</a></li>
@@ -17,12 +17,12 @@
         </nav>
     </header>
 
-    <main>
+    <main class="contenedor">
         <article>
             <header class="informe-header">
                 <p class="numero-nota"><strong>NOTA N°:</strong> ______ / 2026</p>
                 <p class="asunto"><strong>ASUNTO:</strong> Pedido de informe sobre condiciones de accesibilidad - Diplomatura en Gestión de la Comunicación Turística.</p>
-                <p class="fecha-lugar">Santa Fe de la Vera Cruz, 18 de mayo de 2026</p>
+                <p class="fecha-lugar">Santa Fe de la Vera Cruz, <time datetime="2026-05-18">18 de mayo de 2026</time></p>
                 <div class="destinatario">
                     <p>Al Señor Secretario de Turismo<br>
                     de la Municipalidad de la Ciudad de Santa Fe<br>
@@ -38,13 +38,15 @@
                 <p>Por tal motivo, y en ejercicio de las funciones de representación que me competen, solicito tenga a bien informar los siguientes puntos:</p>
             </section>
 
-            <section>
-                <h2>1. Accesibilidad Académica y de Contenidos</h2>
+            <section aria-labelledby="sec-puntos-informe">
+                <h2 id="sec-puntos-informe">Puntos del Informe Solicitado</h2>
+                
+                <h3>1. Accesibilidad Académica y de Contenidos</h3>
                 <ul>
                     <li>Si se han contemplado los apoyos, formatos académicos accesibles y adaptaciones de materiales de estudio en los módulos correspondientes, en caso de que una persona con discapacidad decida cursar la diplomatura.</li>
                 </ul>
 
-                <h2>2. Accesibilidad en la Comunicación y Práctica Profesional</h2>
+                <h3>2. Accesibilidad en la Comunicación y Práctica Profesional</h3>
                 <p>Si dentro del programa de estudio o en la ejecución del trayecto formativo se contemplan los estándares y herramientas de comunicación accesible, a saber:</p>
                 <ul>
                     <li><strong>Discapacidad Visual:</strong> Incorporación de texto alternativo en redes sociales, audiodescripción, macrotipo y sistema Braille para folletería analógica.</li>
@@ -54,8 +56,8 @@
                 </ul>
             </section>
 
-            <section>
-                <h2>Marco Legal de Fundamentación</h2>
+            <section aria-labelledby="sec-marco-legal">
+                <h2 id="sec-marco-legal">Marco Legal de Fundamentación</h2>
                 <p>Este pedido se fundamenta formalmente en el marco legal vigente y ratificado por nuestro país:</p>
                 <ul>
                     <li><strong>Artículo 9 de la Convención Internacional sobre los Derechos de las Personas con Discapacidad (CDPD):</strong> Que establece la obligación de adoptar medidas pertinentes para asegurar el acceso en igualdad de condiciones al entorno físico, el transporte, la información y las comunicaciones.</li>
@@ -66,9 +68,11 @@
 
             <footer class="firma">
                 <p>A la espera de una pronta y favorable respuesta, quedando a su entera disposición para trabajar de manera conjunta, lo saluda atentamente.</p>
-                <p><strong>Blanche Gianella Guadalupe</strong><br>
-                Representante Electa de la Comunidad<br>
-                Comisión Asesora Municipal de Discapacidad de Santa Fe</p>
+                <address>
+                    <strong>Blanche Gianella Guadalupe</strong><br>
+                    Representante Electa de la Comunidad<br>
+                    Comisión Asesora Municipal de Discapacidad de Santa Fe
+                </address>
             </footer>
         </article>
     </main>
